@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>아이비 상징기 초고화질화 서비스 · Ivy Flag Upscale Service</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600&family=DM+Mono:wght@400;500&family=Pretendard:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-ko">아이비</span>
+        <span class="logo-divider">·</span>
+        <span class="logo-en">IVY</span>
+      </div>
+      <div class="header-controls">
+        <button class="lang-toggle" id="langToggle" aria-label="언어 전환">
+          <span class="lang-ko active">KO</span>
+          <span class="lang-sep">/</span>
+          <span class="lang-en">EN</span>
+        </button>
+        <button class="theme-toggle" id="themeToggle" aria-label="테마 전환">
+          <span class="theme-icon light-icon">☀</span>
+          <span class="theme-icon dark-icon">☽</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-tag" data-ko="서비스 안내" data-en="SERVICE INFO">서비스 안내</div>
+      <h1>
+        <span class="hero-title-ko" data-ko="컨볼 자캐 상징기" data-en="Flag Upscale">컨볼 자캐 상징기</span><br/>
+        <span class="hero-accent" data-ko="초고화질화 서비스" data-en="Service">초고화질화 서비스</span>
+      </h1>
+      <p class="hero-sub" data-ko="자신만의 상징기를 최대 16K 화질로 제작해드려요. 제작에 필요한 상징기와 참고 기들을 보내주세요." data-en="Your personal flag, upscaled up to 16K. Send your flag files and references to get started.">
+        자신만의 상징기를 최대 16K 화질로 제작해드려요.<br/>제작에 필요한 상징기와 참고 기들을 보내주세요.
+      </p>
+    </section>
+
+    <!-- 구독 플랜 -->
+    <section class="plans-section">
+      <div class="section-header">
+        <span class="section-label" data-ko="구독 플랜" data-en="Subscription Plans">구독 플랜</span>
+        <span class="section-sub" data-ko="월 정기 구독 · 건당 단가가 낮아요" data-en="Monthly subscription · Lower cost per unit">월 정기 구독 · 건당 단가가 낮아요</span>
+      </div>
+
+      <div class="plans-grid">
+
+        <!-- 무료 -->
+        <div class="plan-card" data-plan="free">
+          <div class="plan-header">
+            <div class="plan-name">
+              <span data-ko="무료" data-en="Free">무료</span>
+            </div>
+            <div class="plan-price-wrap">
+              <span class="plan-price">0</span>
+              <span class="plan-currency">원</span>
+              <span class="plan-period" data-ko="/월" data-en="/mo">/월</span>
+            </div>
+            <div class="plan-extra no-extra" data-ko="추가 제작 불가" data-en="No extra orders">추가 제작 불가</div>
+          </div>
+          <div class="unit-cost-box">
+            <div class="uc-label" data-ko="포함 건수 기준 건당" data-en="Effective cost per unit">포함 건수 기준 건당</div>
+            <div class="uc-value">0<span class="uc-won">원</span></div>
+            <div class="uc-save" data-ko="2K 건당(1,000원) 대비 100% 절약" data-en="100% off vs 2K unit price (₩1,000)">2K 건당(1,000원) 대비 100% 절약</div>
+          </div>
+          <hr class="divider"/>
+          <ul class="feat-list">
+            <li class="feat ok"><span class="feat-dot"></span><span data-ko="주 1회" data-en="1× / week">주 1회</span></li>
+            <li class="feat ok"><span class="feat-dot"></span><span data-ko="최대 2K" data-en="Up to 2K">최대 2K</span></li>
+            <li class="feat no"><span class="feat-dot"></span><span data-ko="워터마크 포함" data-en="Watermark included">워터마크 포함</span></li>
+            <li class="feat no"><span class="feat-dot"></span><span data-ko="복잡한 디테일 불가" data-en="No complex details">복잡한 디테일 불가</span></li>
+            <li class="feat warn"><span class="feat-dot"></span><span data-ko="아이비클라우드 공개 강제" data-en="IvyCloud public (forced)">아이비클라우드 공개 강제</span></li>
+          </ul>
+          <div class="format-row">
+            <span class="fmt-chip">JPG</span>
+            <span class="fmt-chip">BMP</span>
+          </div>
+        </div>
+
+        <!-- 스타터 -->
+        <div class="plan-card" data-plan="starter">
+          <div class="plan-header">
+            <div class="plan-name">
+              <span data-ko="스타터" data-en="Starter">스타터</span>
+            </div>
+            <div class="plan-price-wrap">
+              <span class="plan-price">5,000</span>
+              <span class="plan-currency">원</span>
+              <span class="plan-period" data-ko="/월" data-en="/mo">/월</span>
+            </div>
+            <div class="plan-extra" data-ko="추가 건당 2,800원" data-en="+₩2,800 per extra">추가 건당 2,800원</div>
+          </div>
+          <div class="unit-cost-box">
+            <div class="uc-label" data-ko="주 3회 × 4주 기준 건당" data-en="Per unit (3×/wk × 4wk)">주 3회 × 4주 기준 건당</div>
+            <div class="uc-value">약 417<span class="uc-won">원</span></div>
+            <div class="uc-save" data-ko="4K 건당(1,800원) 대비 77% 절약" data-en="77% off vs 4K unit price (₩1,800)">4K 건당(1,800원) 대비 77% 절약</div>
+          </div>
+          <hr class="divider"/>
+          <ul class="feat-list">
+            <li class="feat ok"><span class="feat-dot"></span><span data-ko="주 3회" data-en="3× / week">주 3회</span></li>
+            <li class="feat ok"><span class="feat-dot"></span><span data-ko="최대 4K" data-en="Up to 4K">최대 4K</span></li>
+            <li class="feat ok"><span class="feat-dot"></span><span data-ko="워터마크 제거" data-en="Watermark removed">워터마크 제거</span></li>
+            <li class="feat mid"><span class="feat-dot"></span><span data-ko="중급 디테일" data-en="Mid-level detail">중급 디테일</span></li>
+            <li class="feat ok"><span class="feat-dot"></span><span data-ko="클라우드 공개 설정 가능" data-en="IvyCloud visibility: optional">클라우드 공개 설정 가능</span></li>
+          </ul>
+          <div class="format-row">
+            <span class="fmt-chip">JPG</span>
+            <span class="fmt-chip">PNG</span>
+            <span class="fmt-chip">BMP</span>
+          </div>
+        </div>
+
+        <!-- 스탠다드 -->
+        <div class="plan-card featured" data-plan="standard">
+          <div class="popular-badge" data-ko="인기" data-en="Popular">인기</div>
+          <div class="plan-header">
+            <div class="plan-name">
+              <span data-ko="스탠다드" data-en="Standard">스탠다드</span>
+            </div>
+            <div class="plan-price-wrap">
+              <span class="plan-price">12,000</span>
+              <span class="plan-currency">원</span>
+              <span class="plan-period" data-ko="/월" data-en="/mo">/월</span>
+            </div>
+            <div class="plan-extra" data-ko="추가 건당 1,700원 · +5,000원 시 12K" data-en="+₩1,700/extra · +₩5,000 for 12K">추가 건당 1,700원 · +5,000원 시 12K</div>
+          </div>
+          <div class="unit-cost-box">
+            <div class="uc-label" data-ko="주 6회 × 4주 기준 건당" data-en="Per unit (6×/wk × 4wk)">주 6회 × 4주 기준 건당</div>
+            <div class="uc-value">약 500<span class="uc-won">원</span></div>
+            <div class="uc-save" data-ko="8K 건당(2,800원) 대비 82% 절약" data-en="82% off vs 8K unit price (₩2,800)">8K 건당(2,800원) 대비 82% 절약</div>
+          </div>
+          <hr class="divider"/>
+          <ul class="feat-list">
+            <li class="feat ok"><span class="feat-dot"></span><span data-ko="주 6회" data-en="6× / week">주 6회</span></li>
+            <li class="feat ok"><span class="feat-dot"></span><span data-ko="최대 8K" data-en="Up to 8K">최대 8K</span></li>
+            <li class="feat ok"><span class="feat-dot"></span><span data-ko="워터마크 제거" data-en="Watermark removed">워터마크 제거</span></li>
+            <li class="feat ok"><span class="feat-dot"></span><span data-ko="세분화 디테일 · 심볼 분리" data-en="Fine detail · Symbol separation">세분화 디테일 · 심볼 분리</span></li>
+            <li class="feat ok"><span class="feat-dot"></span><span data-ko="단일 색 조정" data-en="Single color adjustment">단일 색 조정</span></li>
+            <li class="feat ok"><span class="feat-dot"></span><span data-ko="클라우드 공개 설정 가능" data-en="IvyCloud visibility: optional">클라우드 공개 설정 가능</span></li>
+          </ul>
+          <div class="format-row">
+            <span class="fmt-chip">JPG</span>
+            <span class="fmt-chip">PNG</span>
+            <span class="fmt-chip svg-chip">SVG</span>
+          </div>
+        </div>
+
+        <!-- 프로 -->
+        <div class="plan-card" data-plan="pro">
+          <div class="plan-header">
+            <div class="plan-name">
+              <span data-ko="프로" data-en="Pro">프로</span>
+            </div>
+            <div class="plan-price-wrap">
+              <span class="plan-price">20,000</span>
+              <span class="plan-currency">원</span>
+              <span class="plan-period" data-ko="/월" data-en="/mo">/월</span>
+            </div>
+            <div class="plan-extra" data-ko="추가 건당 1,200원 · +5,000원 시 32K" data-en="+₩1,200/extra · +₩5,000 for 32K">추가 건당 1,200원 · +5,000원 시 32K</div>
+          </div>
+          <div class="unit-cost-box">
+            <div class="uc-label" data-ko="주 10회 × 4주 기준 건당" data-en="Per unit (10×/wk × 4wk)">주 10회 × 4주 기준 건당</div>
+            <div class="uc-value">500<span class="uc-won">원</span></div>
+            <div class="uc-save" data-ko="16K 건당(5,500원) 대비 91% 절약" data-en="91% off vs 16K unit price (₩5,500)">16K 건당(5,500원) 대비 91% 절약</div>
+          </div>
+          <hr class="divider"/>
+          <ul class="feat-list">
+            <li class="feat ok"><span class="feat-dot"></span><span data-ko="주 10회" data-en="10× / week">주 10회</span></li>
+            <li class="feat ok"><span class="feat-dot"></span><span data-ko="최대 16K" data-en="Up to 16K">최대 16K</span></li>
+            <li class="feat ok"><span class="feat-dot"></span><span data-ko="워터마크 제거" data-en="Watermark removed">워터마크 제거</span></li>
+            <li class="feat ok"><span class="feat-dot"></span><span data-ko="세분화 디테일 · 심볼 분리" data-en="Fine detail · Symbol separation">세분화 디테일 · 심볼 분리</span></li>
+            <li class="feat ok"><span class="feat-dot"></span><span data-ko="전체 + 단일 색 조정" data-en="Full + single color adjustment">전체 + 단일 색 조정</span></li>
+            <li class="feat ok"><span class="feat-dot"></span><span data-ko="클라우드 공개 설정 가능" data-en="IvyCloud visibility: optional">클라우드 공개 설정 가능</span></li>
+          </ul>
+          <div class="format-row">
+            <span class="fmt-chip">JPG</span>
+            <span class="fmt-chip">PNG</span>
+            <span class="fmt-chip svg-chip">SVG</span>
+            <span class="fmt-chip">BMP</span>
+            <span class="fmt-chip ai-chip">AI</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 건당 구매 -->
+    <section class="unit-section">
+      <div class="section-header">
+        <span class="section-label" data-ko="건당 구매" data-en="Pay Per Unit">건당 구매</span>
+        <span class="section-sub" data-ko="구독 없이 화질별 단건 구매" data-en="No subscription needed · pay by resolution">구독 없이 화질별 단건 구매</span>
+      </div>
+      <div class="unit-grid">
+        <div class="unit-card">
+          <div class="unit-res">2K</div>
+          <div class="unit-price">1,000<span class="unit-won">원</span></div>
+          <div class="unit-desc" data-ko="기본 화질" data-en="Basic">기본 화질</div>
+        </div>
+        <div class="unit-card">
+          <div class="unit-res">4K</div>
+          <div class="unit-price">1,800<span class="unit-won">원</span></div>
+          <div class="unit-desc" data-ko="선명한 화질" data-en="Sharp">선명한 화질</div>
+        </div>
+        <div class="unit-card">
+          <div class="unit-res">8K</div>
+          <div class="unit-price">2,800<span class="unit-won">원</span></div>
+          <div class="unit-desc" data-ko="고화질" data-en="High">고화질</div>
+        </div>
+        <div class="unit-card">
+          <div class="unit-res">12K</div>
+          <div class="unit-price">4,000<span class="unit-won">원</span></div>
+          <div class="unit-desc" data-ko="초고화질" data-en="Ultra">초고화질</div>
+        </div>
+        <div class="unit-card">
+          <div class="unit-res">16K</div>
+          <div class="unit-price">5,500<span class="unit-won">원</span></div>
+          <div class="unit-desc" data-ko="최상급 화질" data-en="Max">최상급 화질</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p class="footer-note" data-ko="SVG는 확대해도 깨지지 않는 벡터 포맷 · AI 파일은 프로 전용" data-en="SVG is a scalable vector format · AI file is Pro-exclusive">
+        SVG는 확대해도 깨지지 않는 벡터 포맷 · AI 파일은 프로 전용
+      </p>
+      <p class="footer-copy">© 2025 아이비 · IVY</p>
+    </footer>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
